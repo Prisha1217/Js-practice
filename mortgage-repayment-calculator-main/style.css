@@ -1,0 +1,145 @@
+.calc{
+    width:60rem;
+    margin: 3rem auto;
+    display: flex;
+    border-radius: 13px;
+}
+
+.calc-form{
+    padding:29px 30px;
+    width: 750px;
+}
+
+.calc-header{
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.calc-header-text{
+    font-size:24px;
+    color: #122f3f;
+}
+
+.calc-header-clear{
+    font-size:15px;
+    color:grey;
+    text-decoration-line: underline;
+}
+
+.calc-input-area{
+    font-size: 14px;
+}
+
+label{
+    color:gray;
+    font-size: 15px;
+}
+
+.calc-form-item{
+    margin-bottom: 13px;    
+}
+
+.input-box{
+    border-style:solid;
+    margin:10px 10px 6px 0px;
+    padding:13px 0px;
+    border-radius: 5px;
+    border-color: rgb(203, 198, 198);
+    font-size: 16px;
+}
+
+.relative{
+    position: relative;
+    width:inherit;
+}
+
+.input-block{
+    position: absolute;
+    font-size:18px;
+    height:31.7px;
+    padding:6px 12px 6px 12px;
+    width:fit-content;
+    background-color: hsl(202, 86%, 94%); 
+    font-weight: 600;
+    color:rgb(108, 106, 106);
+}
+
+#calc-amt{
+    padding-left: 45px;
+    width: 87%;
+}
+
+#mortgage-term{
+    padding-right:2px;
+    padding-left: 9px;
+}
+
+#interest-rate{
+    padding-right: 2px;
+    padding-left: 9px;
+}
+
+.input-block-left{
+    top:11.7px;
+    left:2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+
+.input-block-right{
+    top:11.7px;
+    right:11.6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+}
+
+.radio-option{
+    border:1px solid gray;
+    padding:10px 10px;
+    margin:9px 12px 9px 0px;
+    display:flex;
+    align-items: center;
+    border-radius: 4px;
+    gap: 7px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width:280px;
+    border-radius: 22px;
+    padding: 13px 21px;
+    border:none;
+    background-color: hsl(61, 70%, 52%);
+    margin-top: 27px;
+    font-size: 18px;
+    color:#122f3f;
+}
+
+.calc-result{
+    background-color:#122f3f;
+    text-align: center;
+    color:white;
+}
+
+.calc-result-content{
+    margin:auto 0px;
+}
+
+.calc-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input.number-to-text::-webkit-outer-spin-button,
+input.number-to-text::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* 
+input[type=number].number-to-text {
+    -moz-appearance: textfield;
+}
+ */

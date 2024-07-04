@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body style="background-color: hsl(202, 86%, 94%);">
+  <div class="calc" style="background-color: white;">
+    <div class="calc-form">
+      <div class="calc-header calc-flex">
+        <div class="calc-header-text plus-jakarta-sans">Mortgage Calculator</div>
+        <div class="calc-header-clear roboto-regular">Clear All</div>
+      </div>
+      <div class="calc-input-area noto-sans" >
+
+        <div class="calc-form-item">
+          <label for="calc-amt">Mortgage Amount</label><br>
+          <div class="relative">
+            <input  type="number" id="calc-amt" class="input-box number-to-text">
+            <div class="input-block input-block-left">£</div>
+          </div>
+        </div>
+
+
+        <div class="calc-form-item calc-flex">
+            <span>
+              <label for="mortgage-term">Mortgage Term</label>
+              <div class="relative">
+                <input  type="number" id="mortgage-term" class="input-box number-to-text">
+                <div class="input-block input-block-right">years  </div>
+              </div>
+            </span>
+            <span>
+              <label for="interest-rate">Interest Rate</label>
+              <div class="relative">
+                <input  type="number" id="interest-rate" class="input-box number-to-text">
+                <div class="input-block input-block-right">% </div>
+              </div>
+            </span>
+          </div>
+
+        <div class="calc-form-item">
+          <label for="mortgage-type">Mortgage Type</label>
+          <div class="radio-option">
+            <input type="radio" id="form-radio" ><label class="plus-jakarta-sans" for="form-radio" style="color: #122f3f">Repayment </label>
+          </div>
+          <div class="radio-option ">
+            <input type="radio" id="form-radio"><label class="plus-jakarta-sans" for = "form-radio" style="color: #122f3f"> Interest Only</label>
+          </div>
+        </div>
+        <button class="btn plus-jakarta-sans"><img src="assets/images/icon-calculator.svg" style="width:20px;" >Calculate Repayments</button>
+      </div>
+    </div>
+
+
+    <div class="calc-result">
+      <div class="calc-result-content">
+        <img src="assets/images/illustration-empty.svg" alt="calculator"><br>  
+        Results shown here
+
+        Complete the form and click “calculate repayments” to see what 
+        your monthly repayments would be.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+
+  Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term
+
+  <!-- Completed results end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
